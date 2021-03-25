@@ -17,6 +17,7 @@ public class Move : MonoBehaviour
 
     public Vector3 jump;
     private float jumpHeight = 10.0f;
+    public bool isRun = false;
     private Vector3 playerVelocity;
     // Start is called before the first frame update
     void Start()
@@ -55,7 +56,11 @@ public class Move : MonoBehaviour
         if (Input.GetButton("Jump"))
             verticalSpeed = jumpHeight;
         if (Input.GetKeyDown(KeyCode.LeftShift))
-            playerSpeed *= 2;
+            isRun = true;
+        else if (Input.GetKeyUp(KeyCode.LeftShift))
+            isRun = false;
+        if (isRun)
+            playerSpeed *= 3;
 
         if (characterController.isGrounded) verticalSpeed = 0;
         else verticalSpeed -= gravity * Time.deltaTime;

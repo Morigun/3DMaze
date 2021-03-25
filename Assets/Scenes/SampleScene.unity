@@ -163,6 +163,7 @@ MonoBehaviour:
   upLimit: -50
   downLimit: 50
   jump: {x: 0, y: 0, z: 0}
+  isRun: 0
 --- !u!143 &538663364
 CharacterController:
   m_ObjectHideFlags: 0
@@ -444,7 +445,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1391991415}
-  - component: {fileID: 1391991414}
   - component: {fileID: 1391991416}
   m_Layer: 0
   m_Name: GameObject
@@ -453,37 +453,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1391991414
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1391991413}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d90d418929503c747b8cc498bb6ab737, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rooms:
-  - {fileID: 677746620831979688, guid: 1d84117654b60b04397c7f8b317ac29d, type: 3}
-  - {fileID: 3451659687582447598, guid: e19a2267399ed0d4ea7ebb11735dff51, type: 3}
-  - {fileID: 6829158397983190150, guid: 92a86db28321c3d48b898d5fd9143186, type: 3}
-  - {fileID: 754199544781766060, guid: 3fa585b0305476649b317654a6af50c3, type: 3}
-  - {fileID: 2741097764718422415, guid: 16287117d8077ce4ea15995922b5e1f6, type: 3}
-  - {fileID: 1818848860179755189, guid: d03274f15c0641e4bbfac500522ab832, type: 3}
-  - {fileID: 4133738632746461825, guid: 5301ad6240599e64cacbf708186434a8, type: 3}
-  - {fileID: 6138544117190086583, guid: 263e956d9c469d94985b7f5799c11062, type: 3}
-  - {fileID: 8718567464575576105, guid: 49ca69855dec82b4ba51dcdae80418a8, type: 3}
-  - {fileID: 6254403313428365290, guid: 443b9e58cca9c30469ab63c3f42b3986, type: 3}
-  - {fileID: 8591383101142570162, guid: 13a778b29e6d3d243805d0fad0625008, type: 3}
-  - {fileID: 8371019330641026906, guid: ede0092323e70d448b2a491d9f6992e1, type: 3}
-  - {fileID: 5562027365048155925, guid: 65d9ed25307fd834dbd9dd854acd3083, type: 3}
-  - {fileID: 2109631137073892900, guid: b6808186d0fc67c4ab7cc18422c5a298, type: 3}
-  - {fileID: 7093923613473510711, guid: 1e3f23fd776da9a40b6a7b73733d9af6, type: 3}
-  - {fileID: 4285510381572836848, guid: 3d361cc2e1fce6042abdee9f195dfeff, type: 3}
-  Size: 100
-  Player: {fileID: 0}
 --- !u!4 &1391991415
 Transform:
   m_ObjectHideFlags: 0
