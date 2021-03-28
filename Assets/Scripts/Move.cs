@@ -31,7 +31,6 @@ public class Move : MonoBehaviour
     {
         CharachterRotate();
         CharachterMove();
-        //CharachterJump();
     }
 
     public void CharachterRotate()
